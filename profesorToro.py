@@ -3,8 +3,9 @@ from discord import app_commands
 import requests
 import random
 import time
+import os
 
-TOKEN = ""
+TOKEN = os.getenv("TOKEN")
 GUILD_ID = 1280336369969004620  # Reemplaza con tu guild ID
 COOLDOWN = 5
 
