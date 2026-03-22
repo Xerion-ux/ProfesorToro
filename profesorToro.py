@@ -6,7 +6,11 @@ import time
 import os
 
 TOKEN = os.getenv("TOKEN")
-GUILD_ID = 1280336369969004620  # Reemplaza con tu guild ID
+
+if not TOKEN:
+    raise ValueError("No se encontró el TOKEN")
+
+GUILD_ID = 1280336369969004620
 COOLDOWN = 5
 
 intents = discord.Intents.default()
