@@ -1,1 +1,1 @@
-worker: python profesorToro.py
+worker: python main.py
